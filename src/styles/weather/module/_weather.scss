@@ -1,0 +1,52 @@
+.weather {
+  border: ($spacing-unit * 4) solid $colour-theme-blue;
+  height: 260px;
+
+  &__container {
+
+    &__row {
+
+      .grouper {
+        box-sizing: border-box;
+        display: block;
+        padding: 0 ($spacing-unit * 4);
+        text-align: left;
+        width: 100%;
+
+        @media #{$ipad} {
+          padding: 0;
+        }
+
+        h1 {
+          margin: ($spacing-unit * 4) 0 ($spacing-unit * 6) 0;
+        }
+
+        &__section {
+          display: inline-block;
+
+          p {
+            display: inline-block;
+
+            &.temp {
+              border-right: ($spacing-unit - 3) solid $colour-black;
+              @include font-size(24px);
+              font-weight: 600;
+              margin-left: ($spacing-unit * 4);
+              padding-right: ($spacing-unit * 4);
+            }
+
+            &.description {
+              padding-left: ($spacing-unit * 4);
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

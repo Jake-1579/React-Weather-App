@@ -1,0 +1,25 @@
+.error {
+
+  &__container {
+
+    &__row {
+
+      p {
+        @include font-size(14px);
+        color: $colour-error-red;
+        margin-top: ($spacing-unit * 5);
+        text-align: center;
+        width: 100%;
+
+        @media #{$ipad} {
+          @include font-size(16px);
+          margin-top: ($spacing-unit * 10);
+        }
+
+      }
+
+    }
+
+  }
+
+}
