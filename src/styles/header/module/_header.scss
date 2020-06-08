@@ -1,0 +1,46 @@
+.header {
+  background: $colour-theme-blue;
+  display: inline-block;
+  float: left;
+  padding: ($spacing-unit * 5) 0;
+  width: 100%;
+
+  &__row {
+
+    &__logo {
+      float: left;
+      width: 30%;
+    }
+
+    &__links {
+      align-items: center;
+      display: flex;
+      float: right;
+      justify-content: flex-end;
+      width: 70%;
+
+      ul {
+        display: inline-block;
+        text-align: right;
+
+        li {
+          display: inline-block;
+
+          a {
+            color: $colour-white;
+            padding: 0 ($spacing-unit * 3);
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  &.locked {
+    position: fixed;
+  }
+
+}
